@@ -1,40 +1,32 @@
-# RxTasks for GMS
+# RxTasks for PlayCore
 
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-RxTasks-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/5599)
-[![CircleCI](https://circleci.com/gh/yongjhih/rxtasks.svg?style=shield)](https://circleci.com/gh/yongjhih/rxtasks)
-[![codecov](https://codecov.io/gh/yongjhih/rxtasks/branch/master/graph/badge.svg)](https://codecov.io/gh/yongjhih/rxtasks)
+[![CircleCI](https://circleci.com/gh/yongjhih/rxtasks-playcore.svg?style=shield)](https://circleci.com/gh/yongjhih/rxtasks-playcore)
+[![codecov](https://codecov.io/gh/yongjhih/rxtasks-playcore/branch/master/graph/badge.svg)](https://codecov.io/gh/yongjhih/rxtasks-playcore)
 
 ## Usage
 
 ```java
-RxTasks.completes(() -> firebaseRemoteConfig.fetch()).subscribe();
+
+RxTasks.completes(() -> splitInstallManager.deferredInstall(modules)).subscribe();
 ```
 
 ```java
-RxTasks.single(() -> firebaseUser.getToken()).map(token -> token.getToken()).subscribe();
+RxTasks.single(() -> splitInstallManager.startInstall(request)).subscribe();
 ```
 
-```java
-RxTasks.maybe(() -> firebaseUser.getToken()).map(token -> token.getToken()).subscribe();
-```
-
-See [official documentation](https://firebase.google.com/docs/) for the details.
 
 ## Installation
 
 ```gradle
-compile 'com.github.yongjhih.rxtasks:rxtasks2-tasks:-SNAPSHOT'
-compile 'com.github.yongjhih.rxtasks:rxtasks2-tasks-kotlin:-SNAPSHOT' // optional
+compile 'com.github.yongjhih.rxtasks-playcore:rxtasks:-SNAPSHOT'
+compile 'com.github.yongjhih.rxtasks-playcore:rxtasks-kotlin:-SNAPSHOT' // optional
 ```
-
-## See Also
-
-* RxFirebase: https://github.com/yongjhih/rxfirebase
 
 ## License
 
 ```
-Copyright 2017 Andrew Chen
+Copyright 2019 Andrew Chen
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

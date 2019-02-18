@@ -1,7 +1,8 @@
-package rxtasks2;
+package rxtasks.playcore;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
+
+import com.google.android.play.core.tasks.OnCompleteListener;
+import com.google.android.play.core.tasks.Task;
 
 import org.junit.Before;
 import org.junit.Test;

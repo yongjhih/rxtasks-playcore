@@ -1,1 +1,2 @@
-include ':rxtasks2', 'rxtasks2-kotlin'
+include ':rxtasks'
+include 'rxtasks-kotlin'

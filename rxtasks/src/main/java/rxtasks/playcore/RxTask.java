@@ -1,10 +1,10 @@
-package rxtasks2;
+package rxtasks.playcore;
+
+import com.google.android.play.core.tasks.OnCompleteListener;
+import com.google.android.play.core.tasks.Task;
 
 import io.reactivex.annotations.CheckReturnValue;
 import io.reactivex.annotations.NonNull;
-
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
 
 import java.util.concurrent.Callable;
 
