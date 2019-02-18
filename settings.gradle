@@ -1,2 +1,3 @@
 include ':rxtasks'
-include 'rxtasks-kotlin'
+include ':rxtasks-kotlin'
+include ':cotasks'

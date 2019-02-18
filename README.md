@@ -21,6 +21,8 @@ RxTasks.single(() -> splitInstallManager.startInstall(request)).subscribe();
 ```gradle
 compile 'com.github.yongjhih.rxtasks-playcore:rxtasks:-SNAPSHOT'
 compile 'com.github.yongjhih.rxtasks-playcore:rxtasks-kotlin:-SNAPSHOT' // optional
+
+compile 'com.github.yongjhih.rxtasks-playcore:cotasks:-SNAPSHOT' // for kotlin coroutines
 ```
 
 ## License
